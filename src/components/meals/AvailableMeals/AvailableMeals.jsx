@@ -1,6 +1,6 @@
 import { DUMMY_MEALS } from '../../../mock/available-meals.mock';
 import classes from './AvailableMeals.module.css';
-import Card from '../../UI/Card';
+import Card from '../../UI/Card/Card';
 import MealItem from '../MealItem/MealItem';
 
 const AvailableMeals = () => {
