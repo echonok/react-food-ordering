@@ -7,7 +7,7 @@ const MealItem = (props) => {
   const cartCtx = useContext(CartContext);
   const price = `$${props.meal.price.toFixed(2)}`;
   const onAddToCart = (amount) => {
-    cartCtx.addItem({ id: props.id, name: props.name, amount, price: props.price });
+    cartCtx.addItem({ id: props.meal.id, name: props.meal.name, amount, price: props.meal.price });
   }
   return (
     <li className={classes.meal}>

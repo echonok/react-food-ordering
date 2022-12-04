@@ -10,7 +10,6 @@ const cartReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_ITEM':
       const updatedItems = [...state.items, action.item];
-      console.log({'action.item': action.item})
       const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount;
       return { ...state, items: updatedItems, totalAmount: updatedTotalAmount };
     default:
